@@ -16,29 +16,33 @@ The project utilizes various data analysis and machine learning methods, includi
 
 - Feature selection: We select relevant features that have a strong correlation with the target variable and drop irrelevant or highly correlated features. This helps improve the model's performance by focusing on the most informative input features.
 
-- Model training and evaluation: We train several regression models, including Linear Regression, Decision Tree, Random Forest, and Gradient Boosting. Cross-validation is used to assess the models' performance and measure the mean root mean squared error (RMSE) as an evaluation metric.
+- Model training and evaluation: We train several regression models, including Linear Regression, Decision Tree, Random Forest, and Gradient Boosting. Cross-validation is used to assess the models' performance and measure the mean root mean squared error (RMSE) and the mean R^2 score as evaluation metrics.
 
 ## Results
 
 The performance of the trained models is as follows:
 
 - Linear Regression:
-  - Mean RMSE: 27366.81
-  - Standard Deviation: 20273.91
+  - Mean RMSE: 0.35
+  - Standard Deviation: 0.02
+  - Mean R^2: 0.89
 
 - Decision Tree:
-  - Mean RMSE: 0.60
+  - Mean RMSE: 0.46
   - Standard Deviation: 0.01
+  - Mean R^2: 0.73
 
 - Random Forest:
-  - Mean RMSE: 0.49
-  - Standard Deviation: 0.02
+  - Mean RMSE: 0.37
+  - Standard Deviation: 0.01
+  - Mean R^2: 0.87
 
 - Gradient Boosting:
-  - Mean RMSE: 0.47
+  - Mean RMSE: 0.36
   - Standard Deviation: 0.02
+  - Mean R^2: 0.90
 
-The results indicate that the Gradient Boosting model performs the best, with the lowest mean RMSE and standard deviation. This suggests that the Gradient Boosting model captures the relationships between the input features and housing prices most accurately among the models tested.
+The results indicate that the Gradient Boosting model performs the best, with the lowest mean RMSE and highest mean R^2 score, demonstrating that it captures the relationships between the input features and housing prices most accurately among the models tested.
 
 ## Conclusion
 
